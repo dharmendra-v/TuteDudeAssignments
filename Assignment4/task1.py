@@ -7,5 +7,6 @@ try:
         for line in f.readlines():
             print(f'Line {count}: {line}', end='')
             count += 1
+        f.close()
 except FileNotFoundError:
     print("Error: The file 'sample.txt' was not found")

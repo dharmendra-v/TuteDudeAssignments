@@ -10,3 +10,4 @@ print("Final content of output.txt:")
 f = open('output.txt', 'r')
 for line in f.readlines():
     print(line, end='')
+f.close()
