@@ -1,0 +1,12 @@
+f = open('output.txt', 'w+')
+line1 = input("Enter text to write to the file: ")
+f.write(line1 + '\n')
+print("Data successfully written to output.txt.\n")
+line2 = input("Enter additional text to append: ")
+f.write(line2 + '\n')
+f.close()
+print("Data successfully appended.\n")
+print("Final content of output.txt:")
+f = open('output.txt', 'r')
+for line in f.readlines():
+    print(line, end='')
