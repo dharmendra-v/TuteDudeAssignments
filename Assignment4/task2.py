@@ -8,6 +8,5 @@ f.close()
 print("Data successfully appended.\n")
 print("Final content of output.txt:")
 f = open('output.txt', 'r')
-for line in f.readlines():
-    print(line, end='')
+print(f.read())
 f.close()
